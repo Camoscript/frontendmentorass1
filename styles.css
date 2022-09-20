@@ -1,0 +1,137 @@
+/* body */
+body {
+  background: hsl(30, 38%, 92%);
+  padding: 50px;
+}
+
+/* The container */
+#container {
+  overflow: hidden;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  width: 900px;
+  display: flex;
+  margin: auto;
+  height: 800px;
+}
+/* The info-side */
+#img {
+    background-size: cover;
+  background-image: url(images/image-product-desktop.jpg);
+  width: 450px;
+  height: 800px;
+}
+#info-side {
+  background-color: hsl(0, 0%, 100%);
+  /* border: 2px solid blue; */
+  padding: 20px;
+  font-size: 25px;
+  width: 450px;
+  height: 760px;
+}
+#p.light {
+  height: 7ch;
+  /* width: 24ch; */
+  /* border: 1px solid black; */
+}
+h1 {
+  /* The bold text */
+  color: hsl(212, 21%, 14%);
+}
+
+/* Class light */
+.light {
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+#p.light {
+  /* this is for the paragraph */
+  font-size: 20px;
+  word-wrap: break-word;
+}
+
+/* price */
+#price {
+  margin-top: 100px;
+}
+#rprice {
+  font-size: 70px;
+  font-weight: bold;
+  color: hsl(158, 36%, 37%);
+}
+#cprice {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  margin-left: 35px;
+}
+
+/* add to cart button */
+#cart-btn {
+  border: none;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  font-size: 20px;
+  height: 65px;
+  width: 400px;
+}
+#button {
+  margin: 140px auto 0px;
+  text-align: center;
+  /* border: 2px solid black; */
+}
+#cart-btn:active {
+  background-color: hsl(158, 53%, 23%);
+}
+
+/* Media queries */
+@media screen and (max-width: 375px) {
+  #container {
+    margin: auto;
+    height: 1300px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* overflow: visible; */
+    /* border: 2px solid black; */
+    width: 494px;
+    border-radius: 15px;
+  }
+  #img{
+    height: 500px;
+    width: 494px;
+    background-size: cover;
+    background-image: url(images/image-product-mobile.jpg);
+    margin-bottom: -5px;
+  }
+  #info-side{
+    height: 750px;
+    width: 494px;
+  }
+}
+;
+/* @media screen and (max-width:731){
+    #container {
+        margin: auto;
+        height: 1300px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; */
+        /* overflow: visible; */
+        /* border: 2px solid black;
+        width: 494px;
+        border-radius: 15px;
+      }
+      #img{
+        height: 500px;
+        width: 494px;
+        background-size: cover;
+        background-image: url(images/image-product-mobile.jpg);
+        margin-bottom: -5px;
+      }
+      #info-side{
+        height: 750px;
+        width: 494px;
+      }
+}; */
