@@ -64,7 +64,7 @@ I would be grateful of I could get more insight on css grid and more flex box fu
 ## Author
 
 - Name - Emmanuel Tobi
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Camoscript](https://www.frontendmentor.io/profile/Camoscript)
 - Twitter - [@Camoscript(https://www.twitter.com/Camoscript1)
 
 
