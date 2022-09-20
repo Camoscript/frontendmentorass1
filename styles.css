@@ -1,3 +1,7 @@
+/* montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* Fraunces font */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
 /* body */
 body {
   background: hsl(30, 38%, 92%);
@@ -35,12 +39,14 @@ body {
   /* border: 1px solid black; */
 }
 h1 {
+  font-family: 'Fraunces', serif;
   /* The bold text */
   color: hsl(212, 21%, 14%);
 }
 
 /* Class light */
 .light {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: hsl(228, 12%, 48%);
 }
@@ -56,11 +62,13 @@ h1 {
   margin-top: 100px;
 }
 #rprice {
+  font-family: 'Fraunces', serif;
   font-size: 70px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: hsl(158, 36%, 37%);
 }
 #cprice {
+  font-family: 'Montserrat', sans-serif;
   text-decoration: line-through;
   color: hsl(228, 12%, 48%);
   margin-left: 35px;
@@ -68,11 +76,13 @@ h1 {
 
 /* add to cart button */
 #cart-btn {
+  font-family: 'Montserrat', sans-serif;
   border: none;
   border-radius: 10px;
   color: hsl(0, 0%, 100%);
   background-color: hsl(158, 36%, 37%);
   font-size: 20px;
+  
   height: 65px;
   width: 400px;
 }
