@@ -1,52 +1,51 @@
 /* montserrat font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 /* Fraunces font */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
 /* body */
 body {
   background: hsl(30, 38%, 92%);
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 /* The container */
 #container {
   overflow: hidden;
-  /* border: 2px solid black; */
   border-radius: 10px;
-  width: 900px;
+  width: 800px;
   display: flex;
-  margin: auto;
-  height: 800px;
+  margin: 50px auto;
+  height: 600px;
 }
 /* The info-side */
 #img {
-    background-size: cover;
+  background-size: cover;
   background-image: url(images/image-product-desktop.jpg);
-  width: 450px;
-  height: 800px;
+  width: 400px;
+  height: 600px;
 }
 #info-side {
   background-color: hsl(0, 0%, 100%);
-  /* border: 2px solid blue; */
-  padding: 20px;
-  font-size: 25px;
-  width: 450px;
-  height: 760px;
+  padding-left:25px;
+  padding-right:25px;
+  font-size:1rem;
+  width: 400px;
+  height: 600px;
 }
 #p.light {
   height: 7ch;
-  /* width: 24ch; */
-  /* border: 1px solid black; */
+
 }
-h1 {
-  font-family: 'Fraunces', serif;
+h2 {
+  font-family: "Fraunces", serif;
   /* The bold text */
+  font-size: 40px;
   color: hsl(212, 21%, 14%);
 }
 
 /* Class light */
 .light {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: hsl(228, 12%, 48%);
 }
@@ -57,18 +56,13 @@ h1 {
   word-wrap: break-word;
 }
 
-/* price */
-#price {
-  margin-top: 100px;
-}
 #rprice {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-size: 70px;
-  /* font-weight: bold; */
   color: hsl(158, 36%, 37%);
 }
 #cprice {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-decoration: line-through;
   color: hsl(228, 12%, 48%);
   margin-left: 35px;
@@ -76,72 +70,151 @@ h1 {
 
 /* add to cart button */
 #cart-btn {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
   border-radius: 10px;
   color: hsl(0, 0%, 100%);
   background-color: hsl(158, 36%, 37%);
   font-size: 20px;
-  
+
   height: 65px;
-  width: 400px;
+  width: 355px;
 }
 #button {
-  margin: 140px auto 0px;
+  margin: 50px auto 0px;
   text-align: center;
-  /* border: 2px solid black; */
 }
 #cart-btn:active {
   background-color: hsl(158, 53%, 23%);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media queries */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   #container {
-    margin: auto;
+    margin:50px auto;
     height: 1300px;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* overflow: visible; */
-    /* border: 2px solid black; */
-    width: 494px;
+    width: 300px;
+    height: 900px;
     border-radius: 15px;
   }
-  #img{
-    height: 500px;
-    width: 494px;
-    background-size: cover;
+  #img {
+    height: 300px;
+    width: 300px;
     background-image: url(images/image-product-mobile.jpg);
-    margin-bottom: -5px;
+    background-size: cover;
   }
-  #info-side{
-    height: 750px;
-    width: 494px;
+  #info-side {
+    height: 500px;
+    width: 252px;
+    font-size: 11px;
+    padding-top: 30px;
+    padding-bottom: 70px;
   }
+  #p.light {
+    height: 7ch;
+   
+  }
+  h2 {
+    width: 250px;
+    font-family: "Fraunces", serif;
+    font-size: 30px;
+    color: hsl(212, 21%, 14%);
+  }
+  
+  /* Class light */
+  .light {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+  }
+  
+  #p.light {
+    width: 250px;
+    /* this is for the paragraph */
+    font-size: 20px;
+    height: 130px
+  }
+  
+  /* price */
+  #price {
+    margin-top: 10px;
+  }
+  #rprice {
+    font-family: "Fraunces", serif;
+    font-size: 40px;
+    color: hsl(158, 36%, 37%);
+  }
+  #cprice {
+    font-size: 19px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    margin-left: 35px;
+  }
+  
+  /* add to cart button */
+  #cart-btn {
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    font-size: 20px;
+  
+    height: 65px;
+    width: 250px;
+  }
+  #button {
+    margin: 50px auto 0px;
+    text-align: center;
+  }
+  #cart-btn:active {
+    background-color: hsl(158, 53%, 23%);
+  }
+  .attribution{
+    margin: auto;
+    width: 310px;
+  }
+  
 }
-;
-/* @media screen and (max-width:731){
-    #container {
-        margin: auto;
-        height: 1300px;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center; */
-        /* overflow: visible; */
-        /* border: 2px solid black;
-        width: 494px;
-        border-radius: 15px;
-      }
-      #img{
-        height: 500px;
-        width: 494px;
-        background-size: cover;
-        background-image: url(images/image-product-mobile.jpg);
-        margin-bottom: -5px;
-      }
-      #info-side{
-        height: 750px;
-        width: 494px;
-      }
-}; */
+
